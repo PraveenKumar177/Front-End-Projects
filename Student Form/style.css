@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(224, 229, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background: #a36565;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+}
+#table-Container  {
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#table-Container tr{
+    border: 1px solid black;
+}
+ #display{
+    margin-top: 200px;
+    border:1px solid #000000;
+    
+} 
+
+#display tr{
+    margin-top: 200px;
+    border:1px solid #180d0d;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form method="post">
+        <div id="container">
+            <h1>
+                STUDENT FORM
+            </h1>
+            <table id="table-Container" >
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" id="uname">
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input type="number" id="uage"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male">Male
+                        <input type="radio" name="gender" value="FeMale" id="female">FeMale
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>
+                        <select name="select" id="select">
+                            <option value="">Select</option>
+                            <option value="html" id="html">Html</option>
+                            <option value="css" id="css">css</option>
+                            <option value="JavaScript" id="javascript">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-Mail</th>
+                    <td><input type="email" id="uemail"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Save" id="sbutton" >
+                        <button onclick="submit()">submit</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div id="display-Container">
+            <table id="display">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Amal</td>
+                    <td>22</td>
+                    <td>Python</td>
+                    <td>Male</td>
+                    <td>Amal@gmail.com</td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
